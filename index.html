@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SNAKE-RS!</title>
+    <style>
+        html,
+        body,
+        canvas {
+            margin: 0px;
+            padding: 0px;
+            width: 600px;
+            height: 400px;
+        }
+
+        .base {
+
+            height: 100vh;
+            width: 100vw;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="base">
+        <canvas id="glcanvas" tabindex='1'></canvas>
+    </div>
+    <script src="https://not-fl3.github.io/miniquad-samples/mq_js_bundle.js"></script>
+    <script>load("snake-rs.wasm");</script> <!-- Your compiled wasm file -->
+</body>
+
+</html>
